@@ -82,7 +82,7 @@ body{
     min-height: 5rem;
     padding: 20px;
     background-color: #FFFFFF;
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 0 0 12px 0 #cccccc78;
     overflow: hidden;
     transition: .3s;
@@ -178,7 +178,7 @@ body{
     
     .slide-container{
         flex-direction: column;
-        height: 250px;
+        height: 280px;
         width:200px;
         min-width: 2rem;
         
@@ -187,6 +187,7 @@ body{
     .cus-review{
         height: auto;
         width:80%;
+
     }
 
     .cus-review h1 {
@@ -194,7 +195,6 @@ body{
         text-align: center;
         font-weight: 100;
         color: #FFFFFF;
-        margin-bottom: 20px;
     } 
     .next, .prev {
 
