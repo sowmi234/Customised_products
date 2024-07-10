@@ -1,0 +1,204 @@
+body{
+    padding: 20px;
+    
+}
+.image-container {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.image-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.image-item img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+.image-btn-container {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-btn {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: rgb(4, 4, 4);
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.cus-review {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #9B5A46;
+    border-radius: 4px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.slide {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cus-review h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.slide-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 5rem;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 0 12px 0 #cccccc78;
+    overflow: hidden;
+    transition: .3s;
+    margin: 0 auto;
+    width: 45%;
+
+}
+
+.twoinarow {
+    width: calc(50% - 15px);
+}
+
+.contentz h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3D4153;
+    margin-bottom: 10px;
+}
+
+.contentz p a {
+    display: block;
+    font-size: 1rem;
+    color: #ec545a;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+
+.slide-image {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0;
+}
+
+.next, .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: 0.6s ease;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    color: #ffffff;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #ffffff;
+}
+
+@media  screen and (max-width:680px) {
+    
+    .slide-container{
+        flex-direction: column;
+        height: 250px;
+        width:200px;
+        min-width: 2rem;
+        
+    }
+
+    .cus-review{
+        height: auto;
+        width:80%;
+    }
+
+    .cus-review h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 100;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    } 
+    .next, .prev {
+
+        font-size: 14px;
+    }
+
+}
